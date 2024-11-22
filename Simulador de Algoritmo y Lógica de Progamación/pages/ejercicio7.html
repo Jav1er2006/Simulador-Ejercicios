@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/page.css">
+  <title>Ejercicio 7</title>
+  <style>
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .navigation-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .navigation-buttons .menu-button {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .navigation-buttons .previous-button, .navigation-buttons .next-button {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .navigation-buttons button:disabled {
+      background-color: #d3d3d3;
+      cursor: not-allowed;
+    }
+
+    .question-image {
+      max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+      height: auto;    /* Mantiene las proporciones de la imagen */
+      display: block;
+      margin: 0 auto;  /* Centra la imagen horizontalmente */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ejercicio 7</h1>
+  </header>
+  <main>
+    <section class="question-container">
+        <img src="../img/ejercicio7.jpg" alt="Pregunta sobre código de programación" class="question-image">
+      <form id="quiz-form">
+        <label>
+          <input type="radio" name="answer" value="a">
+          a. 1 2 3 4 5
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="b">
+          b. 0 1 2 3 4 5
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="c">
+          c. 1 2 3 4 5 6
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="d">
+          d. 1 2 3 4
+        </label><br><br>
+        <button type="button" onclick="checkAnswer(7)">Enviar respuesta</button>
+      </form>
+      <p id="result-message"></p>
+      <div class="navigation-buttons">
+        <button class="menu-button" onclick="window.location.href='./simulador.html'">Volver al menú</button>
+        <button class="previous-button" onclick="window.location.href='ejercicio6.html'">Ejercicio anterior</button>
+        <button class="next-button" onclick="window.location.href='ejercicio8.html'">Siguiente ejercicio</button>
+      </div>
+    </section>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/page.css">
+  <title>Ejercicio 27</title>
+  <style>
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .navigation-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .navigation-buttons .menu-button {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .navigation-buttons .previous-button, .navigation-buttons .next-button {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .navigation-buttons button:disabled {
+      background-color: #d3d3d3;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ejercicio 27</h1>
+  </header>
+  <main>
+    <section class="question-container">
+      <p><strong>En la metodología de Entrada-Proceso-Salida (E-P-S), ¿qué describe mejor la fase de "Proceso"?</strong></p>
+      <form id="quiz-form">
+        <label>
+          <input type="radio" name="answer" value="a">
+          a. Capturar datos de entrada.
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="b">
+          b. Almacenar temporalmente los datos.
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="c">
+          c. Presentar el resultado final al usuario.
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="d">
+          d. Realizar cálculos y transformar datos para obtener el resultado.
+        </label><br><br>
+        <button type="button" onclick="checkAnswer(27)">Enviar respuesta</button>
+      </form>
+      <p id="result-message"></p>
+      <div class="navigation-buttons">
+        <button class="menu-button" onclick="window.location.href='./simulador.html'">Volver al menú</button>
+        <button class="previous-button" onclick="window.location.href='ejercicio26.html'">Ejercicio anterior</button>
+        <button class="next-button" onclick="window.location.href='ejercicio28.html'">Siguiente ejercicio</button>
+      </div>
+    </section>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

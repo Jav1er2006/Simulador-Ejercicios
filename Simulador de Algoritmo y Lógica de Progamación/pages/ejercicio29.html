@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/page.css">
+  <title>Ejercicio 29</title>
+  <style>
+.navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .navigation-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .navigation-buttons .menu-button {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .navigation-buttons .previous-button, .navigation-buttons .next-button {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .navigation-buttons button:disabled {
+      background-color: #d3d3d3;
+      cursor: not-allowed;
+    }
+
+    .question-image {
+      max-width: 100%; 
+      height: auto;   
+      display: block;
+      margin: 0 auto; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ejercicio 29</h1>
+  </header>
+  <main>
+    <section class="question-container">
+      <p><strong>Cuál es la salida de esta función si llamamos a</strong></p>
+      <img src="../img/ejercicio29.jpg" alt="Pregunta sobre código de programación" class="question-image">
+      <img src="../img/ejercicio29 (2).jpg" alt="Pregunta sobre código de programación" class="question-image">
+      <form id="quiz-form">
+        <p><strong>Seleccione una: </strong></p>
+        <label>
+          <input type="radio" name="answer" value="a">
+          a. 8
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="b">
+          b. 16
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="c">
+          c. 12
+        </label><br>
+        <label>
+          <input type="radio" name="answer" value="d">
+          d. 20
+        </label><br><br>
+        <button type="button" onclick="checkAnswer(29)">Enviar respuesta</button>
+      </form>
+      <p id="result-message"></p>
+      <div class="navigation-buttons">
+        <button class="menu-button" onclick="window.location.href='./simulador.html'">Volver al menú</button>
+        <button class="previous-button" onclick="window.location.href='ejercicio28.html'">Ejercicio anterior</button>
+        <button class="next-button" onclick="window.location.href='ejercicio30.html'">Siguiente ejercicio</button>
+      </div>
+    </section>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>
